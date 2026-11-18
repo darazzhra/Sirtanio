@@ -1,0 +1,41 @@
+{
+  "name": "Sirtanio 360 — Beras Organik Seblang Banyuwangi",
+  "short_name": "Sirtanio 360",
+  "description": "Beras organik bersertifikat dari petani mitra Banyuwangi, dengan pelacakan lot QR hingga asal panen.",
+  "lang": "id",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAF7F0",
+  "theme_color": "#1F4D36",
+  "categories": ["food", "shopping"],
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Cek Kode Lot QR",
+      "short_name": "Cek Lot",
+      "url": "./lot.html?kode=LOT-BWI-2026-1104"
+    }
+  ]
+}

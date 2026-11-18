@@ -1,0 +1,2779 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sirtanio 360 — Beras Organik Banyuwangi</title>
+    <meta
+      name="description"
+      content="Beras organik bersertifikat dari petani mitra Banyuwangi, dengan pelacakan lot QR hingga asal panen."
+    />
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+    <meta name="theme-color" content="#1F4D36" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Sirtanio 360" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/clean.css" />
+  </head>
+  <body data-page="lot">
+    <div
+      id="offline-banner"
+      hidden=""
+      role="status"
+      class="sticky top-0 z-[60] flex items-center justify-center gap-2 bg-ink px-4 py-2 text-center text-xs font-semibold text-white"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-wifi-off size-3.5"
+        aria-hidden="true"
+      >
+        <path d="M12 20h.01"></path>
+        <path d="M8.5 16.429a5 5 0 0 1 7 0"></path>
+        <path d="M5 12.859a10 10 0 0 1 5.17-2.69"></path>
+        <path d="M19 12.859a10 10 0 0 0-2.007-1.523"></path>
+        <path d="M2 8.82a15 15 0 0 1 4.177-2.643"></path>
+        <path d="M22 8.82a15 15 0 0 0-11.288-3.764"></path>
+        <path d="m2 2 20 20"></path>
+      </svg>
+      Anda sedang offline. Menampilkan data yang tersimpan.
+    </div>
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1762631383846-6bead15b9796?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+    />
+    <div class="min-h-dvh bg-sand/60 sm:py-6">
+      <div
+        class="mx-auto min-h-dvh max-w-[460px] overflow-hidden bg-cream sm:min-h-0 sm:rounded-[32px] sm:shadow-lift sm:ring-1 sm:ring-line"
+      >
+        <div class="flex items-center justify-between px-4 py-3">
+          <button
+            data-home=""
+            class="flex items-center gap-1.5 rounded-full py-1.5 pr-3 text-sm font-semibold text-forest hover:bg-sand"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-left size-4"
+              aria-hidden="true"
+            >
+              <path d="m12 19-7-7 7-7"></path>
+              <path d="M19 12H5"></path>
+            </svg>
+            Beranda</button
+          ><span class="flex items-center gap-2 text-sm font-bold text-forest"
+            ><svg viewBox="0 0 48 48" class="size-6" aria-hidden="true">
+              <circle cx="24" cy="24" r="24" fill="#1f4d36"></circle>
+              <g transform="translate(24 25)" fill="#d4a34a">
+                <path
+                  d="M0 17V-8"
+                  stroke="#faf7f0"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                ></path>
+                <ellipse cx="0" cy="-12" rx="2.3" ry="4.4"></ellipse>
+                <ellipse
+                  cx="-5.2"
+                  cy="-7"
+                  rx="2.2"
+                  ry="4.2"
+                  transform="rotate(-38 -5.2 -7)"
+                ></ellipse>
+                <ellipse
+                  cx="5.2"
+                  cy="-7"
+                  rx="2.2"
+                  ry="4.2"
+                  transform="rotate(38 5.2 -7)"
+                ></ellipse>
+                <ellipse
+                  cx="-7"
+                  cy="0"
+                  rx="2.2"
+                  ry="4.2"
+                  transform="rotate(-52 -7 0)"
+                ></ellipse>
+                <ellipse
+                  cx="7"
+                  cy="0"
+                  rx="2.2"
+                  ry="4.2"
+                  transform="rotate(52 7 0)"
+                ></ellipse>
+                <ellipse
+                  cx="-6.4"
+                  cy="7"
+                  rx="2"
+                  ry="3.9"
+                  transform="rotate(-62 -6.4 7)"
+                ></ellipse>
+                <ellipse
+                  cx="6.4"
+                  cy="7"
+                  rx="2"
+                  ry="3.9"
+                  transform="rotate(62 6.4 7)"
+                ></ellipse>
+              </g>
+            </svg>
+            Sirtanio 360</span
+          >
+        </div>
+        <main data-verified="">
+          <header
+            class="burlap relative mx-4 overflow-hidden rounded-3xl px-5 pb-6 pt-7 text-center text-white"
+          >
+            <span
+              class="relative mx-auto grid size-[72px] animate-pop place-items-center rounded-full bg-gold text-forest-deep shadow-[0_0_0_8px_rgba(212,163,74,.22)]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shield-check size-9"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                ></path>
+                <path d="m9 12 2 2 4-4"></path></svg
+            ></span>
+            <h1
+              class="relative mt-4 text-[1.65rem] font-semibold leading-tight"
+            >
+              Terverifikasi Asli
+              <span class="font-normal text-gold">—</span> Sirtanio Traceability
+            </h1>
+            <p class="relative mt-1.5 text-sm text-white/75">
+              Dicek pada 15 November 2026
+            </p>
+            <div
+              class="relative mt-5 inline-flex items-center gap-1 rounded-full bg-white/10 py-1.5 pl-4 pr-1.5 ring-1 ring-white/25"
+            >
+              <span
+                class="text-[10px] font-bold uppercase tracking-widest text-white/65"
+                >Lot ID</span
+              ><span
+                class="ml-2 select-all font-mono text-[15px] font-bold tracking-wide"
+                >LOT-BWI-2026-1104</span
+              ><button
+                data-copy=""
+                aria-label="Salin kode lot"
+                class="ml-1 grid size-8 place-items-center rounded-full bg-white/15 transition hover:bg-white/25"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-copy size-4"
+                  aria-hidden="true"
+                  data-icon="copy"
+                >
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path
+                    d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"
+                  ></path></svg
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-check size-4 text-gold hidden"
+                  aria-hidden="true"
+                  data-icon="check"
+                >
+                  <path d="M20 6 9 17l-5-5"></path>
+                </svg>
+              </button>
+            </div>
+            <p
+              aria-live="polite"
+              data-copy-msg=""
+              class="relative mt-2 h-4 text-xs text-gold"
+            ></p>
+          </header>
+          <section class="px-4 pt-6" aria-labelledby="produk-h">
+            <div
+              class="flex items-center gap-5 rounded-3xl bg-white p-5 shadow-card ring-1 ring-line"
+            >
+              <svg
+                viewBox="0 0 200 310"
+                class="w-24 shrink-0 drop-shadow-lg"
+                role="img"
+                aria-label="Kemasan Sirtanio Beras Merah 1 kg"
+              >
+                <defs>
+                  <pattern
+                    id="g_R_5a_"
+                    width="22"
+                    height="16"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <rect width="22" height="16" fill="#7e2b1e"></rect>
+                    <ellipse
+                      cx="4"
+                      cy="4"
+                      rx="4.6"
+                      ry="2"
+                      fill="#a43d2c"
+                      transform="rotate(25 4 4)"
+                    ></ellipse>
+                    <ellipse
+                      cx="14"
+                      cy="3"
+                      rx="4.6"
+                      ry="2"
+                      fill="#7e2b1e"
+                      transform="rotate(-20 14 3)"
+                    ></ellipse>
+                    <ellipse
+                      cx="9"
+                      cy="10"
+                      rx="4.6"
+                      ry="2"
+                      fill="#a43d2c"
+                      transform="rotate(70 9 10)"
+                    ></ellipse>
+                    <ellipse
+                      cx="19"
+                      cy="11"
+                      rx="4.6"
+                      ry="2"
+                      fill="#a43d2c"
+                      transform="rotate(-50 19 11)"
+                    ></ellipse>
+                    <ellipse
+                      cx="2"
+                      cy="13"
+                      rx="4.6"
+                      ry="2"
+                      fill="#7e2b1e"
+                      transform="rotate(5 2 13)"
+                    ></ellipse>
+                  </pattern>
+                  <linearGradient id="s_R_5a_" x1="0" x2="1">
+                    <stop
+                      offset="0"
+                      stop-color="#000"
+                      stop-opacity=".16"
+                    ></stop>
+                    <stop
+                      offset=".22"
+                      stop-color="#fff"
+                      stop-opacity=".16"
+                    ></stop>
+                    <stop offset=".5" stop-color="#fff" stop-opacity="0"></stop>
+                    <stop
+                      offset=".86"
+                      stop-color="#000"
+                      stop-opacity=".1"
+                    ></stop>
+                    <stop offset="1" stop-color="#000" stop-opacity=".2"></stop>
+                  </linearGradient>
+                  <clipPath id="b_R_5a_">
+                    <path
+                      d="M22 36h156c7 0 11 4 11 11l5 240c0 11-8 17-18 17H24c-10 0-18-6-18-17l5-240c0-7 4-11 11-11z"
+                    ></path>
+                  </clipPath>
+                  <clipPath id="w_R_5a_">
+                    <rect x="40" y="154" width="120" height="68" rx="34"></rect>
+                  </clipPath>
+                </defs>
+                <ellipse
+                  cx="100"
+                  cy="304"
+                  rx="82"
+                  ry="5"
+                  fill="#1e2420"
+                  opacity=".18"
+                ></ellipse>
+                <g clip-path="url(#b_R_5a_)">
+                  <rect width="200" height="310" fill="#f3ead6"></rect>
+                  <rect y="30" width="200" height="22" fill="#e6d8b9"></rect>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="33"
+                    y2="33"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="34.8"
+                    y2="34.8"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="36.6"
+                    y2="36.6"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="38.4"
+                    y2="38.4"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="40.2"
+                    y2="40.2"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="42"
+                    y2="42"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="43.8"
+                    y2="43.8"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="45.6"
+                    y2="45.6"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="47.4"
+                    y2="47.4"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="49.2"
+                    y2="49.2"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="51"
+                    y2="51"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="52.8"
+                    y2="52.8"
+                    stroke="#b9a67c"
+                    stroke-width=".5"
+                    opacity=".7"
+                  ></line>
+                  <line
+                    x1="0"
+                    x2="200"
+                    y1="62"
+                    y2="62"
+                    stroke="#c9b98f"
+                    stroke-width="1.2"
+                    stroke-dasharray="3 3"
+                  ></line>
+                  <text
+                    x="100"
+                    y="94"
+                    text-anchor="middle"
+                    font-family="Fraunces, Georgia, serif"
+                    font-weight="700"
+                    font-size="27"
+                    fill="#1f4d36"
+                    letter-spacing="-.5"
+                  >
+                    Sirtanio
+                  </text>
+                  <text
+                    x="100"
+                    y="108"
+                    text-anchor="middle"
+                    font-family="Plus Jakarta Sans, sans-serif"
+                    font-weight="700"
+                    font-size="6.4"
+                    fill="#5c665e"
+                    letter-spacing="1.6"
+                  >
+                    SEBLANG BANYUWANGI
+                  </text>
+                  <rect y="120" width="200" height="24" fill="#c84b31"></rect>
+                  <text
+                    x="100"
+                    y="136"
+                    text-anchor="middle"
+                    font-family="Plus Jakarta Sans, sans-serif"
+                    font-weight="800"
+                    font-size="11"
+                    fill="#fff"
+                    letter-spacing="1.2"
+                  >
+                    BERAS MERAH
+                  </text>
+                  <rect
+                    x="38"
+                    y="152"
+                    width="124"
+                    height="72"
+                    rx="36"
+                    fill="#fff"
+                    opacity=".6"
+                  ></rect>
+                  <g clip-path="url(#w_R_5a_)">
+                    <rect
+                      x="40"
+                      y="154"
+                      width="120"
+                      height="68"
+                      fill="url(#g_R_5a_)"
+                    ></rect>
+                    <rect
+                      x="40"
+                      y="154"
+                      width="120"
+                      height="30"
+                      fill="#fff"
+                      opacity=".14"
+                    ></rect>
+                  </g>
+                  <rect
+                    x="40"
+                    y="154"
+                    width="120"
+                    height="68"
+                    rx="34"
+                    fill="none"
+                    stroke="#1f4d36"
+                    stroke-width="1.6"
+                    opacity=".85"
+                  ></rect>
+                  <circle cx="152" cy="150" r="17" fill="#d4a34a"></circle>
+                  <circle
+                    cx="152"
+                    cy="150"
+                    r="14"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width=".8"
+                    stroke-dasharray="1.5 1.5"
+                  ></circle>
+                  <text
+                    x="152"
+                    y="148.5"
+                    text-anchor="middle"
+                    font-family="Plus Jakarta Sans, sans-serif"
+                    font-weight="800"
+                    font-size="6"
+                    fill="#1e2420"
+                  >
+                    100%
+                  </text>
+                  <text
+                    x="152"
+                    y="155.5"
+                    text-anchor="middle"
+                    font-family="Plus Jakarta Sans, sans-serif"
+                    font-weight="800"
+                    font-size="5.2"
+                    fill="#1e2420"
+                  >
+                    ORGANIK
+                  </text>
+                  <text
+                    x="100"
+                    y="246"
+                    text-anchor="middle"
+                    font-family="Plus Jakarta Sans, sans-serif"
+                    font-weight="600"
+                    font-size="7"
+                    fill="#5c665e"
+                  >
+                    Pulen · bersertifikat · terlacak
+                  </text>
+                  <rect y="256" width="200" height="60" fill="#1f4d36"></rect>
+                  <text
+                    x="22"
+                    y="288"
+                    text-anchor="start"
+                    font-family="Fraunces, Georgia, serif"
+                    font-weight="600"
+                    font-size="26"
+                    fill="#fff"
+                  >
+                    1 kg
+                  </text>
+                  <g transform="translate(130 262)">
+                    <rect width="44" height="44" rx="4" fill="#fff"></rect>
+                    <g>
+                      <rect
+                        x="3"
+                        y="3"
+                        width="11"
+                        height="11"
+                        fill="#1e2420"
+                      ></rect>
+                      <rect x="6" y="6" width="5" height="5" fill="#fff"></rect>
+                      <rect
+                        x="7.5"
+                        y="7.5"
+                        width="2"
+                        height="2"
+                        fill="#1e2420"
+                      ></rect>
+                    </g>
+                    <g>
+                      <rect
+                        x="30"
+                        y="3"
+                        width="11"
+                        height="11"
+                        fill="#1e2420"
+                      ></rect>
+                      <rect
+                        x="33"
+                        y="6"
+                        width="5"
+                        height="5"
+                        fill="#fff"
+                      ></rect>
+                      <rect
+                        x="34.5"
+                        y="7.5"
+                        width="2"
+                        height="2"
+                        fill="#1e2420"
+                      ></rect>
+                    </g>
+                    <g>
+                      <rect
+                        x="3"
+                        y="30"
+                        width="11"
+                        height="11"
+                        fill="#1e2420"
+                      ></rect>
+                      <rect
+                        x="6"
+                        y="33"
+                        width="5"
+                        height="5"
+                        fill="#fff"
+                      ></rect>
+                      <rect
+                        x="7.5"
+                        y="34.5"
+                        width="2"
+                        height="2"
+                        fill="#1e2420"
+                      ></rect>
+                    </g>
+                    <rect
+                      x="18"
+                      y="4"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="22"
+                      y="8"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="18"
+                      y="12"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="4"
+                      y="18"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="10"
+                      y="20"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="18"
+                      y="20"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="26"
+                      y="18"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="34"
+                      y="20"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="22"
+                      y="26"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="30"
+                      y="28"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="38"
+                      y="26"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="18"
+                      y="32"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="26"
+                      y="36"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="34"
+                      y="34"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="40"
+                      y="38"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                    <rect
+                      x="22"
+                      y="40"
+                      width="3.4"
+                      height="3.4"
+                      fill="#1e2420"
+                    ></rect>
+                  </g>
+                  <rect width="200" height="310" fill="url(#s_R_5a_)"></rect>
+                </g>
+                <path
+                  d="M22 36h156c7 0 11 4 11 11l5 240c0 11-8 17-18 17H24c-10 0-18-6-18-17l5-240c0-7 4-11 11-11z"
+                  fill="none"
+                  stroke="#1e2420"
+                  stroke-opacity=".12"
+                ></path>
+              </svg>
+              <div class="min-w-0">
+                <p class="eyebrow text-terracotta">Produk</p>
+                <h2
+                  id="produk-h"
+                  class="mt-1 text-2xl font-semibold leading-tight text-forest"
+                >
+                  Beras Merah Organik
+                </h2>
+                <p class="mt-1 text-sm text-olive">Core Pack · 1 kg</p>
+                <span
+                  class="mt-3 inline-flex items-center gap-1.5 rounded-full bg-forest-tint px-3 py-1 text-xs font-bold text-forest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-badge-check lucide-verified size-3.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+                    ></path>
+                    <path d="m16 9-5.5 5.5L8 12"></path>
+                  </svg>
+                  Lot lolos uji QA</span
+                >
+              </div>
+            </div>
+            <dl class="mt-4 grid grid-cols-2 gap-3">
+              <div class="rounded-2xl bg-white p-4 ring-1 ring-line">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-wheat size-[18px] text-terracotta"
+                  aria-hidden="true"
+                >
+                  <path d="M2 22 16 8"></path>
+                  <path
+                    d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                  ></path>
+                  <path
+                    d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                  ></path>
+                  <path
+                    d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                  ></path>
+                  <path d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"></path>
+                  <path
+                    d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                  ></path>
+                  <path
+                    d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                  ></path>
+                  <path
+                    d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                  ></path>
+                </svg>
+                <dt
+                  class="mt-2 text-[11px] font-bold uppercase tracking-wider text-olive"
+                >
+                  Varietas
+                </dt>
+                <dd class="mt-0.5 text-[15px] font-bold leading-snug text-ink">
+                  Beras Merah Organik
+                </dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4 ring-1 ring-line">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-package size-[18px] text-terracotta"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+                  ></path>
+                  <path d="M12 22V12"></path>
+                  <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                  <path d="m7.5 4.27 9 5.15"></path>
+                </svg>
+                <dt
+                  class="mt-2 text-[11px] font-bold uppercase tracking-wider text-olive"
+                >
+                  Ukuran kemasan
+                </dt>
+                <dd class="mt-0.5 text-[15px] font-bold leading-snug text-ink">
+                  Core Pack · 1 kg
+                </dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4 ring-1 ring-line col-span-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin size-[18px] text-terracotta"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <dt
+                  class="mt-2 text-[11px] font-bold uppercase tracking-wider text-olive"
+                >
+                  Wilayah panen (desa &amp; kecamatan)
+                </dt>
+                <dd class="mt-0.5 text-[15px] font-bold leading-snug text-ink">
+                  Desa Alasmalang, Kec. Singojuruh
+                </dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4 ring-1 ring-line">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-calendar-days size-[18px] text-terracotta"
+                  aria-hidden="true"
+                >
+                  <path d="M8 2v3"></path>
+                  <path d="M16 2v3"></path>
+                  <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                  <path d="M3 9h18"></path>
+                  <path d="M8 13h.01"></path>
+                  <path d="M12 13h.01"></path>
+                  <path d="M16 13h.01"></path>
+                  <path d="M8 17h.01"></path>
+                  <path d="M12 17h.01"></path>
+                  <path d="M16 17h.01"></path>
+                </svg>
+                <dt
+                  class="mt-2 text-[11px] font-bold uppercase tracking-wider text-olive"
+                >
+                  Tanggal panen
+                </dt>
+                <dd class="mt-0.5 text-[15px] font-bold leading-snug text-ink">
+                  12 Oktober 2026
+                </dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4 ring-1 ring-line">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-timer size-[18px] text-terracotta"
+                  aria-hidden="true"
+                >
+                  <line x1="10" x2="14" y1="2" y2="2"></line>
+                  <line x1="12" x2="15" y1="14" y2="11"></line>
+                  <circle cx="12" cy="14" r="8"></circle>
+                </svg>
+                <dt
+                  class="mt-2 text-[11px] font-bold uppercase tracking-wider text-olive"
+                >
+                  Terbaik sebelum
+                </dt>
+                <dd class="mt-0.5 text-[15px] font-bold leading-snug text-ink">
+                  Mei 2027
+                </dd>
+              </div>
+              <div class="rounded-2xl bg-white p-4 ring-1 ring-line col-span-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-factory size-[18px] text-terracotta"
+                  aria-hidden="true"
+                >
+                  <path d="M12 16h.01"></path>
+                  <path d="M16 16h.01"></path>
+                  <path
+                    d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"
+                  ></path>
+                  <path d="M8 16h.01"></path>
+                </svg>
+                <dt
+                  class="mt-2 text-[11px] font-bold uppercase tracking-wider text-olive"
+                >
+                  Tanggal giling &amp; kemas
+                </dt>
+                <dd class="mt-0.5 text-[15px] font-bold leading-snug text-ink">
+                  Giling 28 Oktober 2026 · Kemas 4 November 2026
+                </dd>
+              </div>
+            </dl>
+            <div
+              class="mt-3 flex items-start gap-3.5 rounded-2xl bg-forest p-4 text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-badge-check lucide-verified size-8 shrink-0 text-gold"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+                ></path>
+                <path d="m16 9-5.5 5.5L8 12"></path>
+              </svg>
+              <div class="min-w-0 text-sm">
+                <p
+                  class="text-[11px] font-bold uppercase tracking-wider text-gold"
+                >
+                  Sertifikat organik aktif
+                </p>
+                <p class="mt-0.5 font-bold">SNI 6729:2016 (Pangan Organik)</p>
+                <p class="mt-0.5 text-white/75">
+                  Ref. <span class="font-mono">ORG-SIR-2026-017</span> · berlaku
+                  s.d. 30 Juni 2027
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="px-4 pt-9" aria-labelledby="rantai-h">
+            <p class="eyebrow text-terracotta">Rantai pasok</p>
+            <h2
+              id="rantai-h"
+              class="mt-1.5 text-[1.7rem] font-semibold leading-tight text-forest"
+            >
+              Perjalanan dari sawah ke kemasan
+            </h2>
+            <ol class="mt-5">
+              <li class="relative flex gap-4 pb-1">
+                <span
+                  class="absolute left-[21px] top-11 h-[calc(100%-2.75rem)] w-0.5 bg-forest/30"
+                ></span
+                ><span
+                  class="relative z-10 grid size-11 shrink-0 place-items-center rounded-full bg-forest text-white ring-4 ring-cream"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sprout size-5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3"
+                    ></path>
+                    <path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4"></path>
+                    <path d="M5 21h14"></path></svg
+                ></span>
+                <div class="min-w-0 flex-1 pb-4">
+                  <button
+                    data-step="0"
+                    aria-expanded="false"
+                    class="flex w-full items-start justify-between gap-3 text-left"
+                  >
+                    <span
+                      ><span class="flex flex-wrap items-center gap-2"
+                        ><span class="text-base font-bold text-ink"
+                          >Lahan Mitra</span
+                        ><span
+                          class="inline-flex items-center gap-1 rounded-full bg-forest-tint px-2 py-0.5 text-[11px] font-bold text-forest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-check size-3"
+                            aria-hidden="true"
+                          >
+                            <path d="M20 6 9 17l-5-5"></path>
+                          </svg>
+                          Selesai</span
+                        ></span
+                      ><span
+                        class="mt-0.5 block text-[13px] font-semibold text-terracotta"
+                        >Musim tanam Mei–Okt 2026</span
+                      ></span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down mt-1 size-5 shrink-0 text-olive transition"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <div
+                    hidden=""
+                    data-step-detail="0"
+                    class="mt-2 animate-rise rounded-2xl bg-white p-4 text-sm leading-relaxed text-olive ring-1 ring-line"
+                  >
+                    <p class="font-semibold text-ink">
+                      Sawah organik petani mitra
+                    </p>
+                    <p class="mt-1 flex items-center gap-1.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin size-3.5 text-terracotta"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Desa Alasmalang, Kec. Singojuruh
+                    </p>
+                    <p class="mt-2">
+                      Lahan terdaftar dan diaudit pemeriksa organik. Lokasi
+                      hanya ditampilkan sampai tingkat desa.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative flex gap-4 pb-1">
+                <span
+                  class="absolute left-[21px] top-11 h-[calc(100%-2.75rem)] w-0.5 bg-forest/30"
+                ></span
+                ><span
+                  class="relative z-10 grid size-11 shrink-0 place-items-center rounded-full bg-forest text-white ring-4 ring-cream"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-scissors size-5"
+                    aria-hidden="true"
+                  >
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <path d="M8.12 8.12 12 12"></path>
+                    <path d="M20 4 8.12 15.88"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M14.8 14.8 20 20"></path></svg
+                ></span>
+                <div class="min-w-0 flex-1 pb-4">
+                  <button
+                    data-step="1"
+                    aria-expanded="false"
+                    class="flex w-full items-start justify-between gap-3 text-left"
+                  >
+                    <span
+                      ><span class="flex flex-wrap items-center gap-2"
+                        ><span class="text-base font-bold text-ink">Panen</span
+                        ><span
+                          class="inline-flex items-center gap-1 rounded-full bg-forest-tint px-2 py-0.5 text-[11px] font-bold text-forest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-check size-3"
+                            aria-hidden="true"
+                          >
+                            <path d="M20 6 9 17l-5-5"></path>
+                          </svg>
+                          Selesai</span
+                        ></span
+                      ><span
+                        class="mt-0.5 block text-[13px] font-semibold text-terracotta"
+                        >12 Okt 2026</span
+                      ></span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down mt-1 size-5 shrink-0 text-olive transition"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <div
+                    hidden=""
+                    data-step-detail="1"
+                    class="mt-2 animate-rise rounded-2xl bg-white p-4 text-sm leading-relaxed text-olive ring-1 ring-line"
+                  >
+                    <p class="font-semibold text-ink">
+                      Dipanen saat butir matang optimal
+                    </p>
+                    <p class="mt-1 flex items-center gap-1.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin size-3.5 text-terracotta"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Kec. Singojuruh
+                    </p>
+                    <p class="mt-2">
+                      Gabah ditimbang transparan di hadapan petani saat
+                      diterima.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative flex gap-4 pb-1">
+                <span
+                  class="absolute left-[21px] top-11 h-[calc(100%-2.75rem)] w-0.5 bg-forest/30"
+                ></span
+                ><span
+                  class="relative z-10 grid size-11 shrink-0 place-items-center rounded-full bg-forest text-white ring-4 ring-cream"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sun size-5"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path></svg
+                ></span>
+                <div class="min-w-0 flex-1 pb-4">
+                  <button
+                    data-step="2"
+                    aria-expanded="false"
+                    class="flex w-full items-start justify-between gap-3 text-left"
+                  >
+                    <span
+                      ><span class="flex flex-wrap items-center gap-2"
+                        ><span class="text-base font-bold text-ink"
+                          >Pengeringan</span
+                        ><span
+                          class="inline-flex items-center gap-1 rounded-full bg-forest-tint px-2 py-0.5 text-[11px] font-bold text-forest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-check size-3"
+                            aria-hidden="true"
+                          >
+                            <path d="M20 6 9 17l-5-5"></path>
+                          </svg>
+                          Selesai</span
+                        ></span
+                      ><span
+                        class="mt-0.5 block text-[13px] font-semibold text-terracotta"
+                        >12–15 Okt 2026</span
+                      ></span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down mt-1 size-5 shrink-0 text-olive transition"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <div
+                    hidden=""
+                    data-step-detail="2"
+                    class="mt-2 animate-rise rounded-2xl bg-white p-4 text-sm leading-relaxed text-olive ring-1 ring-line"
+                  >
+                    <p class="font-semibold text-ink">
+                      Dijemur hingga kadar air sesuai standar
+                    </p>
+                    <p class="mt-1 flex items-center gap-1.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin size-3.5 text-terracotta"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Lantai jemur mitra
+                    </p>
+                    <p class="mt-2">
+                      Pengeringan alami menggunakan sinar matahari, dipantau
+                      kadar airnya.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative flex gap-4 pb-1">
+                <span
+                  class="absolute left-[21px] top-11 h-[calc(100%-2.75rem)] w-0.5 bg-forest/30"
+                ></span
+                ><span
+                  class="relative z-10 grid size-11 shrink-0 place-items-center rounded-full bg-forest text-white ring-4 ring-cream"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-factory size-5"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 16h.01"></path>
+                    <path d="M16 16h.01"></path>
+                    <path
+                      d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"
+                    ></path>
+                    <path d="M8 16h.01"></path></svg
+                ></span>
+                <div class="min-w-0 flex-1 pb-4">
+                  <button
+                    data-step="3"
+                    aria-expanded="false"
+                    class="flex w-full items-start justify-between gap-3 text-left"
+                  >
+                    <span
+                      ><span class="flex flex-wrap items-center gap-2"
+                        ><span class="text-base font-bold text-ink"
+                          >Penggilingan Singojuruh</span
+                        ><span
+                          class="inline-flex items-center gap-1 rounded-full bg-forest-tint px-2 py-0.5 text-[11px] font-bold text-forest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-check size-3"
+                            aria-hidden="true"
+                          >
+                            <path d="M20 6 9 17l-5-5"></path>
+                          </svg>
+                          Selesai</span
+                        ></span
+                      ><span
+                        class="mt-0.5 block text-[13px] font-semibold text-terracotta"
+                        >28 Okt 2026</span
+                      ></span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down mt-1 size-5 shrink-0 text-olive transition"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <div
+                    hidden=""
+                    data-step-detail="3"
+                    class="mt-2 animate-rise rounded-2xl bg-white p-4 text-sm leading-relaxed text-olive ring-1 ring-line"
+                  >
+                    <p class="font-semibold text-ink">
+                      Digiling di unit penggilingan Sirtanio
+                    </p>
+                    <p class="mt-1 flex items-center gap-1.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin size-3.5 text-terracotta"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Singojuruh, Banyuwangi
+                    </p>
+                    <p class="mt-2">
+                      Lini giling dipisah dari beras non-organik untuk mencegah
+                      kontaminasi silang.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative flex gap-4 pb-1">
+                <span
+                  class="absolute left-[21px] top-11 h-[calc(100%-2.75rem)] w-0.5 bg-forest/30"
+                ></span
+                ><span
+                  class="relative z-10 grid size-11 shrink-0 place-items-center rounded-full bg-forest text-white ring-4 ring-cream"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-clipboard-check size-5"
+                    aria-hidden="true"
+                  >
+                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                    <path
+                      d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                    ></path>
+                    <path d="m9 14 2 2 4-4"></path></svg
+                ></span>
+                <div class="min-w-0 flex-1 pb-4">
+                  <button
+                    data-step="4"
+                    aria-expanded="false"
+                    class="flex w-full items-start justify-between gap-3 text-left"
+                  >
+                    <span
+                      ><span class="flex flex-wrap items-center gap-2"
+                        ><span class="text-base font-bold text-ink"
+                          >Lolos Uji QA</span
+                        ><span
+                          class="inline-flex items-center gap-1 rounded-full bg-forest-tint px-2 py-0.5 text-[11px] font-bold text-forest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-check size-3"
+                            aria-hidden="true"
+                          >
+                            <path d="M20 6 9 17l-5-5"></path>
+                          </svg>
+                          Selesai</span
+                        ></span
+                      ><span
+                        class="mt-0.5 block text-[13px] font-semibold text-terracotta"
+                        >30 Okt 2026</span
+                      ></span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down mt-1 size-5 shrink-0 text-olive transition"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <div
+                    hidden=""
+                    data-step-detail="4"
+                    class="mt-2 animate-rise rounded-2xl bg-white p-4 text-sm leading-relaxed text-olive ring-1 ring-line"
+                  >
+                    <p class="font-semibold text-ink">
+                      Uji mutu dan residu laboratorium
+                    </p>
+                    <p class="mt-1 flex items-center gap-1.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin size-3.5 text-terracotta"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Lab QA Sirtanio
+                    </p>
+                    <p class="mt-2">
+                      Lot lulus uji mutu dan dinyatakan bebas residu kimia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="relative flex gap-4 pb-1">
+                <span
+                  class="relative z-10 grid size-11 shrink-0 place-items-center rounded-full bg-forest text-white ring-4 ring-cream"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-package size-5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"
+                    ></path>
+                    <path d="M12 22V12"></path>
+                    <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                    <path d="m7.5 4.27 9 5.15"></path></svg
+                ></span>
+                <div class="min-w-0 flex-1 pb-4">
+                  <button
+                    data-step="5"
+                    aria-expanded="true"
+                    class="flex w-full items-start justify-between gap-3 text-left"
+                  >
+                    <span
+                      ><span class="flex flex-wrap items-center gap-2"
+                        ><span class="text-base font-bold text-ink"
+                          >Dikemas</span
+                        ><span
+                          class="inline-flex items-center gap-1 rounded-full bg-forest-tint px-2 py-0.5 text-[11px] font-bold text-forest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-check size-3"
+                            aria-hidden="true"
+                          >
+                            <path d="M20 6 9 17l-5-5"></path>
+                          </svg>
+                          Selesai</span
+                        ></span
+                      ><span
+                        class="mt-0.5 block text-[13px] font-semibold text-terracotta"
+                        >4 Nov 2026</span
+                      ></span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-chevron-down mt-1 size-5 shrink-0 text-olive transition rotate-180"
+                      aria-hidden="true"
+                    >
+                      <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                  </button>
+                  <div
+                    data-step-detail="5"
+                    class="mt-2 animate-rise rounded-2xl bg-white p-4 text-sm leading-relaxed text-olive ring-1 ring-line"
+                  >
+                    <p class="font-semibold text-ink">
+                      Dikemas 1 kg dan diberi kode lot QR
+                    </p>
+                    <p class="mt-1 flex items-center gap-1.5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-map-pin size-3.5 text-terracotta"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      Singojuruh, Banyuwangi
+                    </p>
+                    <p class="mt-2">
+                      Setiap kemasan membawa kode lot yang sama dengan halaman
+                      ini.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </section>
+          <section class="px-4 pt-6" aria-labelledby="privasi-h">
+            <div
+              class="rounded-3xl border-2 border-dashed border-gold bg-gold-tint/70 p-5"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="grid size-10 place-items-center rounded-full bg-gold text-forest-deep"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-eye-off size-5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49"
+                    ></path>
+                    <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242"></path>
+                    <path
+                      d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"
+                    ></path>
+                    <path d="m2 2 20 20"></path></svg
+                ></span>
+                <h2
+                  id="privasi-h"
+                  class="font-display text-xl font-semibold leading-tight text-forest"
+                >
+                  Privasi petani kami lindungi
+                </h2>
+              </div>
+              <p class="mt-3 text-sm leading-relaxed text-ink">
+                Halaman ini hanya menampilkan asal panen sampai tingkat
+                kecamatan dan desa. Demi keamanan petani mitra, kami
+                <strong>tidak menampilkan</strong>:
+              </p>
+              <ul class="mt-3 space-y-2 text-sm font-semibold text-ink">
+                <li class="flex items-center gap-2.5">
+                  <span
+                    class="grid size-5 place-items-center rounded-full bg-terracotta text-white"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-minus size-3"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14"></path></svg
+                  ></span>
+                  Nomor telepon petani
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span
+                    class="grid size-5 place-items-center rounded-full bg-terracotta text-white"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-minus size-3"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14"></path></svg
+                  ></span>
+                  Alamat rumah petani
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span
+                    class="grid size-5 place-items-center rounded-full bg-terracotta text-white"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-minus size-3"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14"></path></svg
+                  ></span>
+                  Data sensitif lahan dan titik koordinat
+                </li>
+              </ul>
+              <p class="mt-3 text-xs text-olive">
+                Sesuai UU Pelindungan Data Pribadi No. 27/2022.
+              </p>
+            </div>
+          </section>
+          <section class="px-4 pt-9" aria-labelledby="masak-h">
+            <div
+              class="overflow-hidden rounded-3xl bg-white shadow-card ring-1 ring-line"
+            >
+              <div class="relative h-36 bg-forest">
+                <img
+                  src="https://images.unsplash.com/photo-1762631383846-6bead15b9796?auto=format&amp;fit=crop&amp;w=800&amp;q=75"
+                  alt="Semangkuk nasi hangat dalam mangkuk kayu"
+                  class="size-full object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-forest-deep/80 to-transparent"
+                ></div>
+                <div class="absolute bottom-3 left-5 right-5">
+                  <p class="eyebrow text-gold">Panduan masak</p>
+                  <h2
+                    id="masak-h"
+                    class="font-display text-2xl font-semibold text-white"
+                  >
+                    Nasi merah pulen
+                  </h2>
+                </div>
+              </div>
+              <div class="p-5">
+                <p
+                  class="flex items-center gap-2 rounded-xl bg-forest-tint px-3.5 py-2.5 text-sm font-bold text-forest"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-droplets size-4"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"
+                    ></path>
+                    <path
+                      d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"
+                    ></path>
+                  </svg>
+                  Tidak perlu direndam. Langsung cuci ringan dan masak.
+                </p>
+                <div
+                  class="mt-5 flex items-center justify-between rounded-2xl bg-cream p-4"
+                >
+                  <div>
+                    <p class="text-sm font-bold text-ink">Jumlah porsi</p>
+                    <p class="text-xs text-olive">1 porsi ≈ 75 g beras</p>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <button
+                      aria-label="Kurangi porsi"
+                      data-portion="-1"
+                      class="grid size-10 place-items-center rounded-full border border-line bg-white text-forest disabled:opacity-40"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-minus size-4"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h14"></path>
+                      </svg></button
+                    ><span
+                      class="w-6 text-center font-display text-2xl font-semibold"
+                      aria-live="polite"
+                      data-portions=""
+                      >2</span
+                    ><button
+                      aria-label="Tambah porsi"
+                      data-portion="1"
+                      class="grid size-10 place-items-center rounded-full border border-line bg-white text-forest disabled:opacity-40"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-plus size-4"
+                        aria-hidden="true"
+                      >
+                        <path d="M5 12h14"></path>
+                        <path d="M12 5v14"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-3 grid grid-cols-2 gap-3 text-center">
+                  <div class="rounded-2xl bg-sand p-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-wheat mx-auto size-5 text-forest"
+                      aria-hidden="true"
+                    >
+                      <path d="M2 22 16 8"></path>
+                      <path
+                        d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0 4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                      ></path>
+                      <path
+                        d="M7.47 8.53 9 7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 15l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                      ></path>
+                      <path
+                        d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13 11l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"
+                      ></path>
+                      <path
+                        d="M20 2h2v2a4 4 0 0 1-4 4h-2V6a4 4 0 0 1 4-4Z"
+                      ></path>
+                      <path
+                        d="M11.47 17.47 13 19l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L5 19l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                      ></path>
+                      <path
+                        d="M15.47 13.47 17 15l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                      ></path>
+                      <path
+                        d="M19.47 9.47 21 11l-1.53 1.53a3.5 3.5 0 0 1-4.94 0L13 11l1.53-1.53a3.5 3.5 0 0 1 4.94 0Z"
+                      ></path>
+                    </svg>
+                    <p
+                      class="mt-1 font-display text-3xl font-semibold text-forest"
+                    >
+                      <span data-rice="">150</span
+                      ><span class="ml-1 text-base">g</span>
+                    </p>
+                    <p class="text-xs font-semibold text-olive">Beras merah</p>
+                  </div>
+                  <div class="rounded-2xl bg-sand p-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-droplets mx-auto size-5 text-terracotta"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"
+                      ></path>
+                      <path
+                        d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"
+                      ></path>
+                    </svg>
+                    <p
+                      class="mt-1 font-display text-3xl font-semibold text-forest"
+                    >
+                      <span data-water="">230</span
+                      ><span class="ml-1 text-base">ml</span>
+                    </p>
+                    <p class="text-xs font-semibold text-olive">
+                      Air (1 : 1,5)
+                    </p>
+                  </div>
+                </div>
+                <ol class="mt-5 space-y-3 text-sm leading-relaxed text-olive">
+                  <li class="flex gap-3">
+                    <span
+                      class="grid size-6 shrink-0 place-items-center rounded-full bg-terracotta text-xs font-bold text-white"
+                      >1</span
+                    ><span
+                      >Cuci ringan 1–2 kali sampai air agak jernih. Jangan
+                      digosok keras.</span
+                    >
+                  </li>
+                  <li class="flex gap-3">
+                    <span
+                      class="grid size-6 shrink-0 place-items-center rounded-full bg-terracotta text-xs font-bold text-white"
+                      >2</span
+                    ><span
+                      >Masukkan ke rice cooker dengan takaran air di atas, lalu
+                      pilih mode normal.</span
+                    >
+                  </li>
+                  <li class="flex gap-3">
+                    <span
+                      class="grid size-6 shrink-0 place-items-center rounded-full bg-terracotta text-xs font-bold text-white"
+                      >3</span
+                    ><span
+                      >Setelah matang, diamkan 10 menit tertutup lalu aduk
+                      dengan sendok nasi.</span
+                    >
+                  </li>
+                </ol>
+                <p class="mt-4 flex items-center gap-2 text-xs text-olive">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-flame size-3.5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"
+                    ></path>
+                  </svg>
+                  Panduan awal. Sesuaikan air 10% lebih banyak untuk tekstur
+                  lebih lembut.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="px-4 pb-8 pt-8 text-center">
+            <h2 class="text-2xl font-semibold text-forest">
+              Suka berasnya? Pesan ulang lebih mudah.
+            </h2>
+            <p class="mt-1.5 text-sm text-olive">
+              Dapatkan resep mingguan dan pengingat pesan ulang.
+            </p>
+            <div class="mt-5 grid gap-3">
+              <button
+                data-modal="program"
+                class="rounded-full bg-terracotta px-6 py-4 text-[15px] font-bold text-white shadow-card transition hover:bg-terracotta-deep"
+              >
+                Daftar Program Pelanggan</button
+              ><button
+                data-home="resep"
+                class="flex items-center justify-center gap-2 rounded-full border-2 border-forest/25 bg-white px-6 py-4 text-[15px] font-bold text-forest hover:border-forest"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-utensils-crossed lucide-fork-knife-crossed size-4"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"
+                  ></path>
+                  <path
+                    d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"
+                  ></path>
+                  <path d="m2.1 21.8 6.4-6.3"></path>
+                  <path d="m19 5-7 7"></path>
+                </svg>
+                Lihat Resep
+              </button>
+            </div>
+            <a
+              href="https://wa.me/"
+              target="_blank"
+              rel="noreferrer"
+              class="mt-6 inline-flex items-center gap-1.5 text-xs font-semibold text-olive underline underline-offset-4"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-flag-triangle-right size-3.5"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6 22V2.8a.8.8 0 0 1 1.17-.71l11.38 5.69a.8.8 0 0 1 0 1.44L6 15.5"
+                ></path>
+              </svg>
+              Laporkan kemasan mencurigakan</a
+            >
+            <p
+              class="mx-auto mt-4 max-w-xs text-[11px] leading-relaxed text-olive/80"
+            >
+              PT Sirtanio Organik Indonesia · Singojuruh, Banyuwangi. Data lot
+              pada halaman ini adalah contoh untuk prototipe.
+            </p>
+          </section>
+        </main>
+        <main class="px-5 pb-12 pt-6 text-center" hidden="" data-unknown="">
+          <span
+            class="mx-auto grid size-20 place-items-center rounded-full bg-terracotta/10 text-terracotta"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-shield-exclamation-point lucide-shield-alert size-10"
+              aria-hidden="true"
+            >
+              <path
+                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+              ></path>
+              <path d="M12 8v4"></path>
+              <path d="M12 16h.01"></path></svg
+          ></span>
+          <h1 class="mt-5 text-3xl font-semibold text-forest">
+            Kode lot tidak dikenali
+          </h1>
+          <p
+            data-unknown-id=""
+            class="mt-2 break-all font-mono text-sm text-olive"
+          >
+            X
+          </p>
+          <p class="mt-4 leading-relaxed text-olive">
+            Kode ini tidak ada dalam catatan lot Sirtanio. Periksa kembali
+            penulisan kode di kemasan. Jika kode benar tetapi tetap tidak
+            ditemukan, kemasan mungkin bukan produk resmi.
+          </p>
+          <div class="mt-7 flex flex-col gap-3">
+            <button
+              data-home=""
+              class="rounded-full bg-forest px-6 py-3.5 font-bold text-white"
+            >
+              Coba kode lain</button
+            ><a
+              href="https://wa.me/"
+              target="_blank"
+              rel="noreferrer"
+              class="rounded-full border-2 border-terracotta/40 px-6 py-3.5 font-bold text-terracotta-deep"
+              >Laporkan lewat WhatsApp</a
+            >
+          </div>
+        </main>
+      </div>
+    </div>
+    <template id="tpl-login"
+      ><div
+        class="fixed inset-0 z-[200] flex items-end justify-center sm:items-center sm:p-6"
+        role="presentation"
+      >
+        <div
+          class="absolute inset-0 bg-ink/55 backdrop-blur-[2px]"
+          data-close=""
+        ></div>
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="_R_0_"
+          class="relative max-h-[92dvh] w-full max-w-lg animate-rise overflow-y-auto rounded-t-3xl bg-cream p-6 shadow-lift sm:rounded-3xl sm:p-8"
+        >
+          <button
+            data-close=""
+            aria-label="Tutup"
+            class="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-olive hover:bg-sand"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x size-5"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+          <p class="eyebrow text-terracotta">Portal 360</p>
+          <h2
+            id="_R_0_"
+            class="mt-2 pr-8 font-display text-3xl font-semibold leading-tight text-forest"
+          >
+            Masuk ke Portal Sirtanio
+          </h2>
+          <form class="mt-6 space-y-4" data-login-form="">
+            <label class="block"
+              ><span class="block text-sm font-semibold text-ink"
+                >Masuk sebagai</span
+              ><select
+                class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20"
+              >
+                <option value="procurement" data-home="registri" selected="">
+                  Procurement · Petugas Lapangan / Pengadaan
+                </option>
+                <option value="qa" data-home="qa">QA · QA / Operasional</option>
+                <option value="finance" data-home="pengadaan">
+                  Finance · Keuangan
+                </option>
+                <option value="sales" data-home="b2b">
+                  Sales / Distributor · Penjualan &amp; Mitra B2B
+                </option>
+                <option value="management" data-home="manajemen">
+                  Management · Manajemen
+                </option>
+              </select></label
+            ><label class="block"
+              ><span class="block text-sm font-semibold text-ink">Email</span
+              ><input
+                required=""
+                type="email"
+                autocomplete="email"
+                placeholder="nama@usaha.co.id"
+                class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20" /></label
+            ><label class="block"
+              ><span class="block text-sm font-semibold text-ink"
+                >Kata sandi</span
+              ><input
+                required=""
+                type="password"
+                autocomplete="current-password"
+                placeholder="••••••••"
+                class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20" /></label
+            ><button
+              type="submit"
+              class="flex w-full items-center justify-center gap-2 rounded-full bg-forest px-6 py-3.5 text-[15px] font-bold text-white transition hover:bg-forest-deep"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-lock size-4"
+                aria-hidden="true"
+              >
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              Masuk Portal 360
+            </button>
+            <p
+              class="mt-5 flex gap-2.5 rounded-xl bg-gold-tint px-4 py-3 text-[13px] leading-relaxed text-ink"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-info mt-0.5 size-4 shrink-0 text-[#8a6416]"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 16v-4"></path>
+                <path d="M12 8h.01"></path></svg
+              ><span
+                >Prototipe: akun belum diverifikasi. Isi email dan kata sandi
+                apa saja, lalu pilih peran untuk melihat modulnya. Peran dapat
+                diganti di dalam portal.</span
+              >
+            </p>
+            <p class="text-center text-xs text-olive">
+              Belum punya akses? Gunakan
+              <span class="font-semibold text-forest">Ajukan Kemitraan</span> di
+              halaman utama.
+            </p>
+          </form>
+        </div>
+      </div></template
+    >
+    <template id="tpl-program"
+      ><div
+        class="fixed inset-0 z-[200] flex items-end justify-center sm:items-center sm:p-6"
+        role="presentation"
+      >
+        <div
+          class="absolute inset-0 bg-ink/55 backdrop-blur-[2px]"
+          data-close=""
+        ></div>
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="_R_0_"
+          class="relative max-h-[92dvh] w-full max-w-lg animate-rise overflow-y-auto rounded-t-3xl bg-cream p-6 shadow-lift sm:rounded-3xl sm:p-8"
+        >
+          <button
+            data-close=""
+            aria-label="Tutup"
+            class="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-olive hover:bg-sand"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x size-5"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+          <p class="eyebrow text-terracotta">Program Pelanggan</p>
+          <h2
+            id="_R_0_"
+            class="mt-2 pr-8 font-display text-3xl font-semibold leading-tight text-forest"
+          >
+            Gabung Program Pelanggan Sirtanio
+          </h2>
+          <form class="mt-5 space-y-4" data-lead-form="">
+            <p class="text-sm leading-relaxed text-olive">
+              Dapatkan resep, panduan masak, dan pengingat pesan ulang. Tanpa
+              spam, bisa berhenti kapan saja.
+            </p>
+            <label class="block"
+              ><span class="block text-sm font-semibold text-ink">Nama</span
+              ><input
+                required=""
+                autocomplete="name"
+                class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20" /></label
+            ><label class="block"
+              ><span class="block text-sm font-semibold text-ink"
+                >Nomor WhatsApp</span
+              ><input
+                required=""
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="08xx xxxx xxxx"
+                class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20" /></label
+            ><label
+              class="flex items-start gap-3 text-[13px] leading-relaxed text-olive"
+              ><input
+                required=""
+                type="checkbox"
+                class="mt-1 size-4 shrink-0 accent-forest"
+              /><span
+                >Saya setuju data saya diproses sesuai Kebijakan Privasi
+                Sirtanio berdasarkan UU PDP No. 27/2022.</span
+              ></label
+            ><button
+              type="submit"
+              class="w-full rounded-full bg-terracotta px-6 py-3.5 text-[15px] font-bold text-white transition hover:bg-terracotta-deep"
+            >
+              Daftar Program
+            </button>
+          </form>
+        </div>
+      </div></template
+    >
+    <template id="tpl-kemitraan"
+      ><div
+        class="fixed inset-0 z-[200] flex items-end justify-center sm:items-center sm:p-6"
+        role="presentation"
+      >
+        <div
+          class="absolute inset-0 bg-ink/55 backdrop-blur-[2px]"
+          data-close=""
+        ></div>
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="_R_0_"
+          class="relative max-h-[92dvh] w-full max-w-lg animate-rise overflow-y-auto rounded-t-3xl bg-cream p-6 shadow-lift sm:rounded-3xl sm:p-8"
+        >
+          <button
+            data-close=""
+            aria-label="Tutup"
+            class="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-olive hover:bg-sand"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x size-5"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+          <p class="eyebrow text-terracotta">Kemitraan</p>
+          <h2
+            id="_R_0_"
+            class="mt-2 pr-8 font-display text-3xl font-semibold leading-tight text-forest"
+          >
+            Ajukan Kemitraan Sirtanio
+          </h2>
+          <form class="mt-5 space-y-4" data-lead-form="">
+            <p class="text-sm leading-relaxed text-olive">
+              Untuk reseller, toko, katering sehat, rumah sakit, dan hotel. Kami
+              hubungi Anda dengan penawaran sesuai kebutuhan.
+            </p>
+            <label class="block"
+              ><span class="block text-sm font-semibold text-ink"
+                >Nama usaha / institusi</span
+              ><input
+                required=""
+                autocomplete="organization"
+                class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20"
+            /></label>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block"
+                ><span class="block text-sm font-semibold text-ink"
+                  >Jenis kemitraan</span
+                ><select
+                  class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20"
+                >
+                  <option value="reseller" selected="">Reseller / toko</option>
+                  <option value="katering">Katering sehat</option>
+                  <option value="rs">Rumah sakit</option>
+                  <option value="hotel">Hotel / restoran</option>
+                </select></label
+              ><label class="block"
+                ><span class="block text-sm font-semibold text-ink"
+                  >Kebutuhan / bulan</span
+                ><input
+                  inputmode="numeric"
+                  placeholder="mis. 200 kg"
+                  class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20"
+              /></label>
+            </div>
+            <label class="block"
+              ><span class="block text-sm font-semibold text-ink"
+                >Nomor WhatsApp</span
+              ><input
+                required=""
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="08xx xxxx xxxx"
+                class="mt-1.5 w-full rounded-xl border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-olive/60 focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20" /></label
+            ><label
+              class="flex items-start gap-3 text-[13px] leading-relaxed text-olive"
+              ><input
+                required=""
+                type="checkbox"
+                class="mt-1 size-4 shrink-0 accent-forest"
+              /><span
+                >Saya setuju data saya diproses sesuai Kebijakan Privasi
+                Sirtanio berdasarkan UU PDP No. 27/2022.</span
+              ></label
+            ><button
+              type="submit"
+              class="w-full rounded-full bg-terracotta px-6 py-3.5 text-[15px] font-bold text-white transition hover:bg-terracotta-deep"
+            >
+              Kirim Pengajuan
+            </button>
+          </form>
+        </div>
+      </div></template
+    >
+    <template id="tpl-privasi"
+      ><div
+        class="fixed inset-0 z-[200] flex items-end justify-center sm:items-center sm:p-6"
+        role="presentation"
+      >
+        <div
+          class="absolute inset-0 bg-ink/55 backdrop-blur-[2px]"
+          data-close=""
+        ></div>
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="_R_0_"
+          class="relative max-h-[92dvh] w-full max-w-lg animate-rise overflow-y-auto rounded-t-3xl bg-cream p-6 shadow-lift sm:rounded-3xl sm:p-8"
+        >
+          <button
+            data-close=""
+            aria-label="Tutup"
+            class="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-olive hover:bg-sand"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x size-5"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+          <p class="eyebrow text-terracotta">UU PDP No. 27/2022</p>
+          <h2
+            id="_R_0_"
+            class="mt-2 pr-8 font-display text-3xl font-semibold leading-tight text-forest"
+          >
+            Kebijakan Privasi
+          </h2>
+          <dl class="mt-5 space-y-4">
+            <div>
+              <dt class="text-sm font-bold text-forest">
+                Data yang kami kumpulkan
+              </dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Nama dan nomor WhatsApp yang Anda isi sendiri, serta data
+                pembelian dari marketplace resmi.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm font-bold text-forest">Tujuan penggunaan</dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Layanan pelanggan, pengingat pesan ulang, dan pengiriman resep.
+                Tidak dijual kepada pihak ketiga.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm font-bold text-forest">Data petani mitra</dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Nomor telepon, alamat rumah, dan data sensitif lahan petani
+                tidak pernah ditampilkan pada halaman publik atau QR.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm font-bold text-forest">Hak Anda</dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Mengakses, memperbaiki, dan menghapus data pribadi sesuai UU
+                Pelindungan Data Pribadi No. 27/2022.
+              </dd>
+            </div>
+          </dl>
+          <p
+            class="mt-5 flex gap-2.5 rounded-xl bg-gold-tint px-4 py-3 text-[13px] leading-relaxed text-ink"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-info mt-0.5 size-4 shrink-0 text-[#8a6416]"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path></svg
+            ><span
+              >Ringkasan untuk prototipe. Naskah kebijakan lengkap perlu
+              ditinjau oleh pihak legal PT Sirtanio Organik Indonesia.</span
+            >
+          </p>
+        </div>
+      </div></template
+    >
+    <template id="tpl-ketentuan"
+      ><div
+        class="fixed inset-0 z-[200] flex items-end justify-center sm:items-center sm:p-6"
+        role="presentation"
+      >
+        <div
+          class="absolute inset-0 bg-ink/55 backdrop-blur-[2px]"
+          data-close=""
+        ></div>
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="_R_0_"
+          class="relative max-h-[92dvh] w-full max-w-lg animate-rise overflow-y-auto rounded-t-3xl bg-cream p-6 shadow-lift sm:rounded-3xl sm:p-8"
+        >
+          <button
+            data-close=""
+            aria-label="Tutup"
+            class="absolute right-4 top-4 grid size-9 place-items-center rounded-full text-olive hover:bg-sand"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-x size-5"
+              aria-hidden="true"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg>
+          </button>
+          <p class="eyebrow text-terracotta">Syarat penggunaan</p>
+          <h2
+            id="_R_0_"
+            class="mt-2 pr-8 font-display text-3xl font-semibold leading-tight text-forest"
+          >
+            Ketentuan Layanan
+          </h2>
+          <dl class="mt-5 space-y-4">
+            <div>
+              <dt class="text-sm font-bold text-forest">
+                Harga &amp; ketersediaan
+              </dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Harga bersifat indikatif dan dapat berbeda di tiap marketplace
+                atau musim panen.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm font-bold text-forest">Informasi produk</dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Konten resep dan panduan masak bersifat edukasi gaya hidup,
+                bukan klaim pengobatan.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm font-bold text-forest">Verifikasi lot</dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Halaman QR menampilkan data lot yang tercatat resmi. Laporkan
+                kemasan yang kodenya tidak dikenali.
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm font-bold text-forest">Portal mitra</dt>
+              <dd class="mt-0.5 text-sm leading-relaxed text-olive">
+                Akses Portal 360 hanya untuk pengguna terdaftar dan tunduk pada
+                perjanjian kemitraan.
+              </dd>
+            </div>
+          </dl>
+          <p
+            class="mt-5 flex gap-2.5 rounded-xl bg-gold-tint px-4 py-3 text-[13px] leading-relaxed text-ink"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-info mt-0.5 size-4 shrink-0 text-[#8a6416]"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path></svg
+            ><span
+              >Ringkasan untuk prototipe. Ketentuan resmi perlu disahkan oleh
+              pihak legal perusahaan.</span
+            >
+          </p>
+        </div>
+      </div></template
+    >
+    <template id="tpl-program-done"
+      ><div class="mt-6 text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-check lucide-check-circle-2 mx-auto size-12 text-forest"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="m16 9-5.5 5.5L8 12"></path>
+        </svg>
+        <p class="mt-3 text-lg font-semibold">
+          Terima kasih, data Anda tercatat.
+        </p>
+        <p class="mt-1 text-sm text-olive">
+          Resep mingguan dan pengingat pesan ulang akan kami kirim lewat
+          WhatsApp.
+        </p>
+        <button
+          data-close=""
+          class="mt-6 rounded-full bg-forest px-6 py-3 text-sm font-bold text-white hover:bg-forest-deep"
+        >
+          Selesai
+        </button>
+      </div></template
+    ><template id="tpl-kemitraan-done"
+      ><div class="mt-6 text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-check lucide-check-circle-2 mx-auto size-12 text-forest"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="m16 9-5.5 5.5L8 12"></path>
+        </svg>
+        <p class="mt-3 text-lg font-semibold">
+          Terima kasih, data Anda tercatat.
+        </p>
+        <p class="mt-1 text-sm text-olive">
+          Tim kemitraan akan menghubungi Anda dalam 2 hari kerja.
+        </p>
+        <button
+          data-close=""
+          class="mt-6 rounded-full bg-forest px-6 py-3 text-sm font-bold text-white hover:bg-forest-deep"
+        >
+          Selesai
+        </button>
+      </div></template
+    >
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

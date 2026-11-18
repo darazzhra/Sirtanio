@@ -1,0 +1,125 @@
+/*
+  Tema "bersih" Sirtanio 360. Dimuat SETELAH styles.css dan hanya menimpa token desain.
+  Prinsip: satu aksen (hijau) + netral, satu keluarga font, tanpa tekstur, bayangan tipis.
+  Untuk kembali ke desain lama, hapus baris <link> clean.css di index.html, lot.html, portal.html.
+*/
+
+:root {
+  /* Netral: putih hangat tipis, bukan krem/beige */
+  --color-cream: #fafaf8;
+  --color-sand: #f3f4f1;
+  --color-line: #e6e8e3;
+  --color-ink: #1c211e;
+  --color-olive: #666d68;
+
+  /* Aksen tunggal: hijau Sirtanio */
+  --color-forest: #1f4d36;
+  --color-forest-deep: #173a2a;
+  --color-forest-tint: #eef3ef;
+
+  /* Emas diganti hijau sage lembut (dipakai di atas blok hijau tua) */
+  --color-gold: #a9c4b1;
+  --color-gold-tint: #f1f4f0;
+
+  /* Satu keluarga font: Plus Jakarta Sans untuk semuanya */
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Bayangan lebih tipis */
+  --shadow-card: 0 1px 2px rgb(16 24 20 / 0.05);
+  --shadow-lift: 0 12px 32px -16px rgb(16 24 20 / 0.2);
+}
+
+/* Portal memakai merah/emas sebagai penanda status (peringatan, bermasalah), jadi dipertahankan */
+body[data-page='portal'] {
+  --color-gold: #d4a34a;
+  --color-gold-tint: #f6ead0;
+}
+
+/* Tanpa tekstur kertas dan karung */
+body::before {
+  display: none;
+}
+.burlap {
+  background-image: none;
+  background-color: var(--color-forest-deep);
+}
+
+/* Judul: sans-serif tegas, tanpa huruf miring */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+h1 em,
+h2 em,
+h3 em,
+.font-display.italic {
+  font-style: normal;
+}
+:focus-visible {
+  outline-color: var(--color-forest);
+}
+
+/* Label kecil kapital: lebih tenang */
+.eyebrow {
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+/* Halaman publik: aksen merah bata dialihkan ke hijau, merah hanya untuk error */
+body:not([data-page='portal']) .text-terracotta {
+  color: var(--color-forest);
+}
+body:not([data-page='portal']) h1 em.text-terracotta,
+body:not([data-page='portal']) h2 em.text-terracotta {
+  color: var(--color-olive);
+}
+body:not([data-page='portal']) button.bg-terracotta,
+body:not([data-page='portal']) a.bg-terracotta,
+body:not([data-page='portal']) span.bg-terracotta {
+  background-color: var(--color-forest);
+}
+body:not([data-page='portal']) button.bg-terracotta:hover,
+body:not([data-page='portal']) a.bg-terracotta:hover {
+  background-color: var(--color-forest-deep);
+}
+/* Tombol/chip di atas blok hijau tua dibuat terang agar tidak hilang */
+body:not([data-page='portal']) :is(.bg-forest, .bg-forest-deep, .burlap, footer) .bg-terracotta {
+  background-color: var(--color-gold);
+  color: var(--color-forest-deep);
+}
+body:not([data-page='portal']) :is(.bg-forest, .bg-forest-deep, .burlap, footer) .text-terracotta {
+  color: var(--color-gold);
+}
+
+/* Portal: tombol utama hijau, status merah/emas tetap */
+body[data-page='portal'] button.bg-terracotta,
+body[data-page='portal'] a.bg-terracotta {
+  background-color: var(--color-forest);
+}
+body[data-page='portal'] button.bg-terracotta:hover,
+body[data-page='portal'] a.bg-terracotta:hover {
+  background-color: var(--color-forest-deep);
+}
+
+/* Bintang rating tetap emas, tapi redup */
+svg.fill-gold {
+  fill: #d9b866;
+  color: #d9b866;
+}
+
+/* Tombol marketplace: kartu putih polos (bukan hitam/oranye/hijau); WhatsApp tetap hijau sebagai aksi utama */
+body:not([data-page='portal']) a.group.rounded-2xl[href*='tiktok'],
+body:not([data-page='portal']) a.group.rounded-2xl[href*='shopee'],
+body:not([data-page='portal']) a.group.rounded-2xl[href*='tokopedia'] {
+  background-color: #fff;
+  color: var(--color-ink);
+  box-shadow: inset 0 0 0 1px var(--color-line);
+}
+
+/* Portal: label kecil dan logo "360" ikut hijau; merah hanya untuk status */
+body[data-page='portal'] .eyebrow.text-terracotta,
+body[data-page='portal'] .font-display > .text-terracotta {
+  color: var(--color-forest);
+}
